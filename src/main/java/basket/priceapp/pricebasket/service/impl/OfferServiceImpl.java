@@ -20,7 +20,6 @@ public class OfferServiceImpl implements OfferService {
 
         double totalDiscount = 0.0;
         Map<String, Integer> items = basket.getItems();
-
         // loop products in cart
         for (Map.Entry<String, Integer> entry : items.entrySet()) {
             String productName = entry.getKey().toLowerCase();  // Product name in lower case
@@ -31,7 +30,8 @@ public class OfferServiceImpl implements OfferService {
                     .findFirst().orElse(null);
             if (promotion != null) {
                 String targetProduct = promotion.getProductNameTarget();
-                int targetCount = items.getOrDefault(targetProduct.toLowerCase(), 0);  // Number of target products in the basket
+                // Number of target products in the basket
+                int targetCount = items.getOrDefault(targetProduct.toLowerCase(), 0);
 
                 // Verification of the number of eligible reductions
                 int eligibleDiscounts = Math.min(productCount / promotion.getQuantity(), targetCount);

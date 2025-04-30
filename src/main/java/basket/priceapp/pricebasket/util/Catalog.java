@@ -38,5 +38,4 @@ public class Catalog {
         return promotions;
     }
 
-
 }
