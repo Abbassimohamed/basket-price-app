@@ -14,6 +14,4 @@ public class Basket {
     public Map<String, Integer> getItems() {
         return Collections.unmodifiableMap(items);
     }
-
-
 }

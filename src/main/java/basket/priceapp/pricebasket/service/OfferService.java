@@ -8,7 +8,7 @@ import java.util.List;
 public interface OfferService {
 
     /**
-     * Applies available offer to a basket and calculates the total discount.
+     * Applies available promotions to a basket and calculates the total discount.
      * @param basket Basket
      * @param promos List<Promotion>
      * @param discountDetails StringBuilder

@@ -22,7 +22,7 @@ Before you begin, ensure you have the following installed on your machine:
 ## Installation
 
 1. Clone the repository:
-
+   git clone https://github.com/Abbassimohamed/basket-price-app.git
 
 2. Build and run the application:
 
